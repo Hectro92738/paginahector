@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--idioma español-->
+
+<head>
+    <meta charset="UTF-8">
+    <!--utilise los caracteres-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--compatible con el navegador-->
+    <meta name="viewport" content="width=device, initial-scale=1.0">
+    <!--compatible con otros dispositivos-->
+
+
+    <title> practica 1</title>
+
+     <link rel="preload" href="css/normalize.css" as="style">
+     <link rel="stylesheet" href="css/normalize.css">
+
+     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+     <link rel="preload" href="css/styles.css" as="Style">
+    <link href="css/styles.css" rel="stylesheet">
+    <!--llamar hoja de estilo-->
+    <style>
+        :root{
+    --blanco:#FFFF;
+    --oscuro:#212121;
+    --primario:#FFC107;
+    --secundario:#0097A7;
+    --gris:#757575;
+    --grisClaro:#DFE9F3;
+    
+  }
+  html{
+     font-size: 62.5%;
+     box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body{
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    background-image:linear-gradient(to top, (238, 149, 231) 0%, rgba(70, 170, 70, 0.437) 100%);
+  }
+  
+  h1{
+  font-size: 3rem;
+  }
+  h2{
+  font-size: 2rem;
+  }
+  
+  h3{
+  font-size:1.8rem;
+  }
+  h1,h2,h3{
+    text-align: center;
+  }
+  
+  
+  .titulo span{
+    font-size: 2rem;
+  
+  }
+  .contenedor{
+  width: 120rem;
+  margin: 0 auto 0 auto;
+  }
+  .boton{
+    background-color: rgb(189, 183, 231);
+    color:var(--blanco);
+    padding:1rem 3rem;
+    margin-top:1rem;
+    font-size:2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius:5rem;
+    width: 30%;
+    text-align: center;
+    border: none;
+  
+  }
+  @media (min-width:768px) {
+    .boton{
+      width: auto;
+    }
+  }
+  .boton:hover{  
+    cursor: pointer;
+  }
+  
+  .nav-bg{
+    background-color: rgb(184, 104, 104);
+  
+  }
+  
+  .formulario{
+    background-color:rgb(243, 223, 223) ;
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+  
+  }
+  .formulario fieldset{
+    border:none;
+  }
+  .formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color:#0097A7;
+  }
+
+  .campo label{
+    color: #ffff(153, 63, 63);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+  }
+  
+  
+  @media (min-width:768px) {
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+  }
+  @media (min-width:768px) {
+    .servicios
+    {
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        column-gap: 1rem;
+    }
+  }
+  .imput-text{
+    width: 100%;
+    border: none;
+    padding: 1,2rem;
+    border-radius: .5rem;
+  }
+  .enviar .boton{
+    width: 100%;
+  
+  }
+    </style>
+</head>
+
+<body>
+    <!--Cuerpo = lo que el usuario visualiza -->
+
+    <head>
+        <h1 > REGISTRATE GRATIS <span> <br> y empieza el sopping </span> </h1>
+    </head>
+
+       
+        
+    </div>
+
+   
+
+    <section>
+    <h2> registrate </h2>
+    <form class="formulario">
+        <fieldset>
+            <!--Formulario-->
+            <div class="contenedor-campos">
+
+
+            
+
+            <div class="campo">
+                <!--salto de pagina-->
+                <label>Nombre</label>
+                <!--Etiqueta-->
+                <input class="imput-text" type="text" placeholder="Tu nombre">
+            </div>
+            <div class="campo">
+                <!--salto de pagina-->
+                <label>apellido paterno</label>
+                <!--Etiqueta-->
+                <input class="imput-text" type="text" placeholder="Tu apellido paterno">
+            </div>
+            <div class="campo">
+                <!--salto de pagina-->
+                <label>apellido materno </label>
+                <!--Etiqueta-->
+                <input class="imput-text" type="text" placeholder="Tu apellido materno">
+            </div>
+            <div class="campo">
+                <!--salto de pagina-->
+                <label>sexo</label>
+                <!--Etiqueta-->
+                <select>sexo 
+                <option>mujer</option>
+                <option> hombre</option>
+            </select>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="campo">
+                <label> Email</label>
+                <input class="imput-text" type="tel" placeholder="Email">
+                
+            </div>
+            <div class="campo">
+                <label> usuario</label>
+                <input class="imput-text" type="tel" placeholder="ingresa tunusuario">
+                
+            </div>
+            <div class="campo">
+                <label> contraseña </label>
+                <input class="imput-text" type="email" placeholder="crea tu contraseña">
+                
+        </div><!--contenedor-campos-->
+
+
+            <!--BOTON DE SI Ó NO -->
+            <!--<label> listo </label>
+            <input type="radio">-->
+
+
+
+            <a href="catalogo.html">
+                <div class="enviar">
+                <input class="boton" type="submit" value="aceptar">
+                </div>
+            </a>
+
+        </fieldset>
+    </form>
+</section>
+</main>
+
+    <footer class="footer">
+        <h4> Todos los derechos reservados. Anita </h4>
+    </footer>
+
+
+</body>
+
+
+
+</html>
